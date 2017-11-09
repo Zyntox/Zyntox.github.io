@@ -1,0 +1,21 @@
+/* This css section overrides the default styling of elements. reset.scss *START* */
+
+html{
+    // *see http://snook.ca/archives/html_and_css/font-size-with-rem
+    font-size: 62.5%;
+}
+
+body{
+    margin:0 auto;
+}
+
+p, ul, li, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* reset.scss *END* */

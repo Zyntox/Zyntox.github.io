@@ -1,0 +1,57 @@
+{% if include.pagetype == "about" %}
+  <header id="header--aboutMe">
+{% else %}
+  <header id="header--animated">
+{% endif %}
+    <ul class="nav">
+        <div id="language-selector">
+          {% if include.language == "swedish" %}
+            <a class="selected" href="{{ '/index.html' | absolute_url }}">SWE</a>
+          {% endif %}
+          {% if include.language == "english" %}
+            <a href="{{ '/index.html' | absolute_url }}">SWE</a>
+          {% endif %}
+          <span>/</span>
+          {% if include.language == "swedish" %}
+            <a href="{{'/index_eng.html' | absolute_url }}">ENG</a>
+          {% endif %}
+          {% if include.language == "english" %}
+            <a  class="selected" href="{{'/index_eng.html' | absolute_url }}">ENG</a>
+          {% endif %}
+        </div>
+        {% if include.language == "swedish" %}
+          <li class="nav__item"><a class="nav__link" href="{{ '/index.html' | absolute_url }}">PERSONLIGT BREV</a></li>
+          <li class="nav__item"><a class="nav__link" href="{{ '/curriculum-vitae.html' | absolute_url }}">CURRICULUM VITAE</a></li>
+          <li class="nav__item"><a class="nav__link" href="{{ '/about-me.html' | absolute_url }}">OM MIG</a></li>
+          <li class="nav__item"><a clasS="nav__link" href="#contact">KONTAKT</a></li>
+        {% endif %}
+        {% if include.language == "english" %}
+          <li class="nav__item"><a class="nav__link" href="{{ '/index_eng.html' | absolute_url }}">COVER LETTER</a></li>
+          <li class="nav__item"><a class="nav__link" href="{{ '/curriculum-vitae_eng.html' | absolute_url }}">CURRICULUM VITAE</a></li>
+          <li class="nav__item"><a class="nav__link" href="{{ '/about-me_eng.html' }}">ABOUT ME</a></li>
+          <li class="nav__item"><a clasS="nav__link" href="#contact">CONTACT</a></li>
+        {% endif %}
+    </ul>
+    {% if include.pagetype == "about" %}
+      <div class="jumbotron jumbotron--aboutMe">
+          <h1 class="jumbotron__headline">MARCUS NILSSON</h1><br>
+          <h2 class="jumbotron__headline--border">{{page.title}}</h2>
+      </div>
+    {% endif %}
+    {% if include.pagetype == "index" %}
+      <div class="jumbotron">
+          <!--<img src="./assets/img/logo.svg" alt="" class="jumbotron__logo">-->
+          <div id="PB" class="jumbotron__logo"></div><br>
+          <h1 class="jumbotron__headline">MARCUS NILSSON</h1><br>
+          <h2 class="jumbotron__headline--border">{{page.title}}</h2>
+      </div>
+    {% endif %}
+    {% if include.pagetype == "curriculum" %}
+      <div class="jumbotron">
+          <!--<img src="./assets/img/logo.svg" alt="" class="jumbotron__logo">-->
+          <div id="CV" class="jumbotron__logo"></div><br>
+          <h1 class="jumbotron__headline">MARCUS NILSSON</h1><br>
+          <h2 class="jumbotron__headline--border">{{page.title}}</h2>
+      </div>
+    {% endif %}
+</header>

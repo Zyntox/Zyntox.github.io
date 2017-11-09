@@ -1,0 +1,48 @@
+{% if include.language == "swedish" %}
+  <footer>
+    <div class="wrapper--large">
+      <div class="contactbox">
+        <h2 id="contact" class="contactbox__headline">KONTAKTA MIG?</h2>
+        <ul class="contactbox__list">
+          <li class="contactbox__item">Email: <a href="mailto:{{site.email}}">{{site.email}}</a></li>
+          <li class="contactbox__item">Telefon: <i>{{site.phonenumber}}</i></li>
+        </ul>
+      </div>
+
+      <div class="socialmedia">
+        <h2 class="socialmedia__headline">NI FINNER MIG ÄVEN HÄR:</h2>
+        <ul class="socialmedia__list">
+          <li class="socialmedia__icon"><a href="https://github.com/Zyntox?tab=contributions&from=2015-09-01"><img src="{{ '/assets/img/github.svg' | absolute_url }}" alt=""></a></li>
+          <li class="socialmedia__icon"><a href="https://se.linkedin.com/in/marcus-nilsson-212a79ab"><img src="{{ '/assets/img/linkedin.svg' | absolute_url }}" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+{% endif %}
+
+
+{% if include.language == "english" %}
+  <footer>
+    <div class="wrapper--large">
+      <div class="contactbox">
+        <h2 id="contact" class="contactbox__headline">CONTACT ME?</h2>
+        <ul class="contactbox__list">
+          <li class="contactbox__item">Email: <a href="mailto:{{site.email}}">{{site.email}}</a></li>
+          <li class="contactbox__item">Telephone: <i>{{site.phonenumber}}</i></li>
+        </ul>
+      </div>
+
+      <div class="socialmedia">
+        <h2 class="socialmedia__headline">YOU CAN ALSO FIND ME HERE:</h2>
+        <ul class="socialmedia__list">
+          <li class="socialmedia__icon"><a href="https://github.com/Zyntox?tab=contributions&from=2015-09-01"><img src="{{ '/assets/img/github.svg' | absolute_url }}" alt=""></a></li>
+          <li class="socialmedia__icon"><a href="https://se.linkedin.com/in/marcus-nilsson-212a79ab"><img src="{{ '/assets/img/linkedin.svg' | absolute_url }}" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+{% endif %}
+
+  </body>
+  <script type="text/javascript" src="{{ '/assets/bundle.js' | absolute_url }}"></script>
+</html>

@@ -1,0 +1,603 @@
+
+/* General CSS that is the same for all views of the website. general CSS *START* */
+@media screen and (max-width:3000px){
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 0 100%; }
+}
+
+@keyframes fadeInElement{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeInRight{
+    from {opacity: 0; left: 500px;}
+    to {opacity: 1; left: 0px;}
+}
+
+@keyframes fadeInLeft{
+    from {opacity: 0; right: 500px;}
+    to {opacity: 1; right: 0px;}
+}
+
+#loading-screen{
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.9);
+	text-align: center;
+
+	&.hide-screen{
+		display: none;
+	}
+
+	.info-box{
+		font-weight: 100;
+		top: 17vh;
+		color: #fff;
+		position: relative;
+
+		h1{
+			font-size: 2.5vw;
+			font-weight:200;
+			letter-spacing: 1vw;
+			display: inline-block;
+		}
+	}
+}
+
+html{
+    background-color: #303030;
+}
+
+body{
+    background-color: $first-color;
+}
+
+a{
+    color: $fourth-color;
+}
+
+.clear{
+    clear: both;
+}
+
+
+header, #header--animated, #header--aboutMe{
+    min-height: 400px;
+}
+
+header{
+		padding: 0 10px;
+    text-align: center;
+
+    background-image: url('../assets/img/type2.png');
+    background-repeat: repeat-y;
+    //background-color: #424242;
+    background-color: #363636;
+    background-position: center;
+}
+
+#header--animated{
+    animation: animatedBackground 60s linear infinite;
+    animation-direction: alternate;
+}
+
+#header--aboutMe{
+    background-color: #151515;
+
+    background-image: url('../assets/img/hp2.jpg');
+    background-size:cover;
+    background-repeat: none;
+
+}
+
+#language-selector{
+	float:right;
+
+	a{
+		color: grey;
+	}
+
+	span{
+		color: lightgrey;
+	}
+
+	.selected{
+		color: $fourth-color;
+	}
+
+}
+
+
+
+html, p, h1, h2, h3, h4, h5, h6 {
+     font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+    margin: 0px 0 0px 0;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float: right;
+}
+
+.center{
+    text-align: center;
+}
+
+
+.bold{
+    font-weight: 600;
+}
+
+.nav{
+    color: $third-color;
+    background-color:rgba(0,0,0,0.3);
+    list-style: none;
+}
+
+.nav__item{
+    font-weight: 300;
+    display:inline-block;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: $second-color;
+}
+
+.nav__link:hover{
+    color:$fourth-color;
+}
+
+
+.jumbotron{
+
+}
+
+.jumbotron--aboutMe{
+    position: relative;
+    top: 220;
+}
+
+.jumbotron__logo{
+    width: 300px;
+    height:250px;
+    margin: 0px 0 20px 0 ;
+
+    animation: fadeInElement 3s;
+}
+
+.jumbotron__logo, .jumbotron__headline, .jumbotron__headline--border, .jumbotron__subline {
+    display:inline-block;
+    color: $second-color;
+}
+
+.jumbotron__headline--border{
+    border: 1px solid $fourth-color;
+}
+
+.jumbotron__subline{
+    font-weight: 100;
+}
+
+.mainboard{
+    background-image: url('../assets/img/BG.png');
+    padding: 50px 0 70px 0;
+}
+
+
+.introduction__headline{
+    font-weight: 300;
+}
+
+.introduction__text{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+}
+
+.textblock{
+    line-height: 1.6;
+}
+
+
+.cloudbox{
+    text-align: center;
+}
+
+.cloudbox__item{
+    display:inline-block;
+    border:1px solid $fourth-color;
+}
+
+footer{
+    background-image:  url('../assets/img/debut_dark.png');
+    background-color: $fifth-color;
+    color: $second-color;
+}
+
+
+.contactbox{
+    outline: none;
+    text-align: center;
+}
+
+.contactbox__field, .contactbox__message{
+    outline:none;
+}
+
+.btn{
+    background-color: rgba(125,125,125,0.4);
+    border: none;
+    color: #000000;
+}
+
+.btn:hover {
+    background-color: $fourth-color;
+    color: $third-color;
+}
+
+
+/* General CSS *END* */
+
+/*This is the CSS for desktop layout. Desktop CSS *START*  */
+
+header{
+    padding: 0 0 20px 0;
+}
+
+.wrapper{
+    min-width: 400px;
+    margin:0 auto;
+    width: 50%;
+}
+
+.wrapper--large{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.nav{
+    margin: 0 0 20px 0;
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.nav__item{
+    padding: 0 10px 0 10px
+}
+
+.jumbotron{
+    padding: 20px 0 0 0 ;
+}
+
+.jumbotron__headline{
+    min-width: 290px;
+    max-width: 290px;
+
+    font-size: 30px;
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+
+.jumbotron__headline--border{
+
+    min-width: 258px;
+    max-width: 258px;
+
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 5px 0 0 0;
+    padding: 14px 0 10px 0;
+}
+
+.jumbotron__subline{
+    font-size: 20px;
+    font-size: 2.0rem;
+    margin: 20px 0 20px 0;
+}
+
+.information-container{
+    padding: 20px 0 20px 0;
+    border-bottom:1px solid black;
+}
+
+.introduction{
+    margin: 10px 0 0px 0;
+}
+
+.introduction__headline{
+    margin: 5px 0 10px 0
+}
+
+.introduction__text{
+    line-height: 1.5;
+    padding: 10px 0 10px 0;
+}
+
+.textblock{
+    margin: 25px 0 25px 0;
+}
+
+.cloudbox{
+    margin: 30px 0 50px 0;
+}
+
+.cloudbox__headline{
+    margin: 30px 0 20px 0
+}
+
+.cloudbox__item{
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin: 2px 1px 2px 1px;
+    padding: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px 0 0px 0;
+}
+
+.contactbox{
+    border-right: 1px solid #595959;
+    margin: 0 0 20px 0;
+    padding: 0 3% 10px 0;
+    display: inline-block;
+    max-width: 400px;
+
+}
+
+
+.contactbox__headline{
+    font-weight: 100;
+    padding: 0 0 10px 0;
+    text-align: left;
+}
+
+.contactbox__field{
+    width: 100%;
+    border: 0;
+    margin: 2px 0 0 0;
+    padding: 5px 2px 5px 2px;
+}
+
+.contactbox__message{
+    margin: 2px 0 0 0;
+    border: 0;
+    width:100%;
+    height: 100px
+
+}
+
+.contactbox__field, .contactbox__message{
+    background-color: rgba(89,89,89,0.4);
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.contactbox__list{
+    font-size: 14px;
+    list-style: none;
+    text-align: left;
+}
+
+.contactbox__item{
+    margin: 10px 0 10px 0;
+}
+
+.btn{
+    width: 80%;
+    margin: 10px 0 5px 0;
+    padding: 8px 0 8px 0;
+}
+
+
+.timeline{
+    margin: 0 0 100px 0;
+}
+
+.timeline__line{
+    min-height: 900px;
+    left: 50%;
+    position: absolute;
+    width:1px;
+    height: 900px;
+    border-right:1px solid black;
+    z-index: 10;
+}
+
+.timepoint{
+    position: relative;
+    width: 49.2%;
+    margin:  20px 0 -100px 0;
+    z-index: 20;
+}
+
+.timepoint--animateright{
+    animation: fadeInRight 2s;
+}
+.timepoint--animateleft{
+    animation: fadeInLeft 2s;
+}
+
+.timepoint__fluff{
+    height: 56px;
+    float:left;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.timepoint__marker{
+    position: relative;
+    border:1px solid $fourth-color;
+    background-color: $first-color;
+    z-index: 100;
+    width:15px;
+    height:15px;
+    transform: rotate(45deg);
+}
+
+.timepoint__marker--left{
+    top:48px;
+    right: 30%;
+}
+
+.timepoint__marker--right{
+    top:48px;
+    left: 103%;
+}
+
+
+.timepoint__divider{
+    width: 10%;
+}
+
+.timepoint__information{
+    width: 90%;
+}
+
+
+.timepoint__header{
+    border:1px solid black;
+}
+
+
+.timepoint__year{
+    position: relative;
+    top:5px;
+    text-align: center;
+    width: 30%;
+    font-weight: 700;
+    font-size: 4vw;
+    //font-size: 34px;
+    //font-size: 3.4rem;
+    padding: 10px 0.5% 10px 0.5%;
+    float:left;
+}
+
+.timepoint__headline{
+    font-size: 1.8vw;
+    //font-size: 16px;
+    //font-size: 1.6rem;
+    padding:11px 0.6% 12px 0.6%;
+    float:left;
+    width: 67%;
+    font-weight: 300;
+
+    border-left: 1px solid black;
+
+}
+
+.timepoint__text{
+    line-height: 1.5;
+    padding: 10px;
+    border-right: 1px solid $third-color;
+    border-bottom:1px solid $third-color;
+    border-left:1px solid $third-color;
+}
+
+.socialmedia{
+    min-width: 50px;
+    padding: 0 30px 0 30px ;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.socialmedia__headline{
+    font-weight: 100;
+    text-align: center;
+}
+
+.socialmedia__list {
+
+    display: inline-block;
+    padding: 20px 0 10px 0;
+    list-style: none;
+}
+
+.socialmedia__icon{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+.socialmedia__icon:hover{
+    background-color: white;
+}
+
+}
+
+/*****************************************************************************************
+** Mobile CSS *START*
+*****************************************************************************************/
+@media (max-width: 590px){
+
+    .timeline{
+        margin: 0 0 0 0;
+    }
+
+    .timeline__line {
+        display: none;
+    }
+
+    .timepoint{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+
+    .timepoint__information{
+        width: 100%;
+    }
+
+    .timepoint__year{
+        margin: 8px 0 0 0;
+        font-size: 8vw;
+    }
+
+    .timepoint__headline{
+        font-size: 3.8vw;
+    }
+
+    .timepoint__divider{
+        display: none;
+    }
+
+    .contactbox{
+        border-right: none;
+        border-bottom: 1px solid #595959;
+    }
+
+    .contactbox__headline{
+        text-align: center;
+    }
+
+    .contactbox__item{
+        text-align: center;
+    }
+
+    .socialmedia{
+        padding: 0 0 20px 0;
+    }
+}
+
+
+/*****************************************************************************************
+** Mobile CSS *END*
+*****************************************************************************************/

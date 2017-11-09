@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="92px" height="92px" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>M 2 + Polygon 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Framsida" sketch:type="MSArtboardGroup" transform="translate(-252.000000, -294.000000)">
+            <g id="M-2-+-Polygon-2" sketch:type="MSLayerGroup" transform="translate(253.000000, 294.000000)">
+                <text id="M-2" sketch:type="MSTextLayer" font-family="Josefin Sans" font-size="48" font-style="condensed" font-weight="260" fill="#75F2CE">
+                    <tspan x="24" y="65.9821429">M</tspan>
+                </text>
+                <polygon id="Polygon-2" stroke="#FFFFFF" stroke-width="0.5" sketch:type="MSShapeGroup" points="45 0.982142857 76.8198052 14.1623377 90 45.9821429 76.8198052 77.801948 45 90.9821429 13.1801948 77.801948 0 45.9821429 13.1801948 14.1623377 "></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+{% include header.html language=page.language %}
+{% include loading_screen.html %}
+<div class="mainboard">
+    <div class="wrapper">
+        <div class="introduction">
+            <h1 class="introduction__headline center">{{page.aboutHeading}}</h1>
+            <div class="textblock">
+                <p class="textblock__text center">{{page.about}}</p><br>
+                <p id="randfact" class="textblock__text center {{page.language}}"></p><br>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% include footer.html language=page.language %}
