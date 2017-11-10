@@ -129,6 +129,8 @@ function setHeaderlogo(){
     },
     // Function executed when the object is being loaded.
     function ( xhr ) {
+      var progressBar = document.getElementById('loader');
+        progressBar.style.width =  (xhr.loaded / xhr.total * 100 ) + "%";
 		    console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
 	  },
     // Function executed when there was an error loading the model.

@@ -47,6 +47,21 @@
 			letter-spacing: 1vw;
 			display: inline-block;
 		}
+
+		#loading-bar{
+			margin-bottom: 50px;
+			height: 1px;
+			width: 500px;
+			display: inline-block;
+			background-color: rgba(255,255,255,0.2);
+
+			#loader{
+				height: 1px;
+				width: 0%;
+				background-color: #75F2CE;
+			}
+
+		}
 	}
 }
 
