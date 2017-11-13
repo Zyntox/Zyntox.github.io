@@ -37,19 +37,20 @@
 
 	.info-box{
 		font-weight: 100;
-		top: 17vh;
+		top: 40vh;
 		color: #fff;
 		position: relative;
 
 		h1{
 			font-size: 2.5vw;
 			font-weight:200;
+			margin: 20px 0px;
 			letter-spacing: 1vw;
 			display: inline-block;
 		}
 
 		#loading-bar{
-			margin-bottom: 50px;
+			margin-top: 20px;
 			height: 1px;
 			width: 500px;
 			display: inline-block;
