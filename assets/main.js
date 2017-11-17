@@ -114,6 +114,15 @@ function setHeaderlogo(){
        // Remove loading screen
        if(document.getElementById('loading-screen')){
          hideScreen();
+
+         var timepointLeft = document.getElementsByClassName('timepoint left');
+         var timepointRight = document.getElementsByClassName('timepoint right');
+         for (var i = 0; i < timepointLeft.length; i++){
+           timepointLeft[i].className += " timepoint--animateleft";
+         }
+         for (var i = 0; i < timepointRight.length; i++){
+           timepointRight[i].className += " timepoint--animateright";
+         }
        }
 
 
