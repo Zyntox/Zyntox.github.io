@@ -1,0 +1,240 @@
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+
+
+.jumbotron{
+  padding-top: 150px;
+  .jumbotron__logo{
+    margin: 0px 0 60px 0;
+  }
+
+
+  .jumbotron__headline{
+    font-size: 7rem;
+    margin-bottom: 10px;
+    min-width: 800px;
+    max-width: 800px;
+  }
+
+  .jumbotron__headline--border{
+    min-width: 610px;
+    max-width: 610px;
+    font-size: 6rem;
+    margin: 0px 0px 40px 0px;
+    padding: 28px 0 17px 0;
+  }
+
+}
+
+footer{
+  padding: 100px 0px 60px 0px;
+
+  .contactbox{
+    margin: 60px 0px;
+    border-right: none;
+    text-align: center;
+    max-width: none;
+
+    .contactbox__headline{
+      text-align: center;
+      font-size: 4rem;
+
+    }
+
+    .contactbox__list{
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  .socialmedia{
+    .socialmedia__headline{
+      font-size: 4rem;
+    }
+
+    .socialmedia__list{
+      margin: 30px 0px;
+
+      .socialmedia__icon{
+        img{
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*********************************************************************
+** Cover letter CSS *START*
+*********************************************************************/
+
+  .nav{
+    padding: 30px 0px;
+
+    #hamburger-menu{
+      width: 50px;
+      margin-right: 40px;
+      height: 50px;
+      color: #fff;
+
+      .hamburger-line{
+        background-color: #fff;
+        width: 100%;
+        height: 6px;
+        margin: 9px 0px;
+      }
+
+    }
+
+    #inner-nav{
+      display: none;
+    }
+
+    .nav__item{
+      font-size: 40px;
+      width: 100%;
+      margin: 20px 0px;
+    }
+  }
+
+  #loading-screen{
+  	.info-box{
+  		font-weight: 100;
+  		top: 40vh;
+  		color: #fff;
+  		position: relative;
+
+  		h1{
+  			font-size: 5.5vw;
+  			font-weight:200;
+  			margin: 20px 0px;
+  			letter-spacing: 1vw;
+  			display: inline-block;
+  		}
+
+  		#loading-bar{
+  			height: 5px;
+
+  			#loader{
+  				height: 5px;
+  			}
+  		}
+  	}
+  }
+
+  .wrapper{
+    width: 90%;
+  }
+
+  .introduction{
+    .introduction__headline{
+      line-height: 1.8;
+    }
+    .introduction__text{
+      padding: 30px 0 30px 0;
+    }
+  }
+
+  .information-container{
+    padding: 20px 0 60px 0;
+  }
+
+  .textblock{
+    margin: 60px 0 13px 0;
+  }
+
+  .cloudbox{
+    margin: 80px 0 50px 0;
+
+    .cloudbox__headline{
+      margin: 30px 0 60px 0;
+    }
+
+    .cloudbox__item{
+      font-size: 33px;
+      margin: 19px 1px 2px 1px;
+      padding: 25px 20px 20px 20px;
+      border: 6px solid #75F2CE;
+    }
+
+  }
+
+}
+
+
+/*********************************************************************
+** Cover letter CSS *End*
+*********************************************************************/
+
+/*********************************************************************
+** Curriculum Vitae CSS *START*
+*********************************************************************/
+
+
+
+
+
+
+
+
+/*****************************************************************************************
+** Mobile CSS *START*
+*****************************************************************************************/
+@media (max-width: 590px){
+
+    .timeline{
+        margin: 0 0 0 0;
+    }
+
+    .timeline__line {
+        display: none;
+    }
+
+    .timepoint{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+
+    .timepoint__information{
+        width: 100%;
+    }
+
+    .timepoint__year{
+        margin: 8px 0 0 0;
+        font-size: 8vw;
+    }
+
+    .timepoint__headline{
+        font-size: 3.8vw;
+    }
+
+    .timepoint__divider{
+        display: none;
+    }
+
+    .contactbox{
+        border-right: none;
+        border-bottom: 1px solid #595959;
+    }
+
+    .contactbox__headline{
+        text-align: center;
+    }
+
+    .contactbox__item{
+        text-align: center;
+    }
+
+    .socialmedia{
+        padding: 0 0 20px 0;
+    }
+}
+
+
+/*****************************************************************************************
+** Mobile CSS *END*
+*****************************************************************************************/

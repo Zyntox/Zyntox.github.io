@@ -4,6 +4,13 @@
   <header id="header--animated">
 {% endif %}
     <ul class="nav">
+      <div id="hamburger-menu" class="right">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+      <br class="clear">
+      <div id="inner-nav">
         <div id="language-selector">
           {% if include.language == "swedish" %}
             <a class="selected" href="{{ '/index.html' | absolute_url }}">SWE</a>
@@ -31,6 +38,7 @@
           <li class="nav__item"><a class="nav__link" href="{{ '/about-me_eng.html' }}">ABOUT ME</a></li>
           <li class="nav__item"><a clasS="nav__link" href="#contact">CONTACT</a></li>
         {% endif %}
+      </div>
     </ul>
     {% if include.pagetype == "about" %}
       <div class="jumbotron jumbotron--aboutMe">

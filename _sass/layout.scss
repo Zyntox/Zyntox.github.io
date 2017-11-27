@@ -1,6 +1,7 @@
 
 /* General CSS that is the same for all views of the website. general CSS *START* */
-@media screen and (max-width:3000px){
+@media screen
+and (max-width: 3000px){
 
 @keyframes animatedBackground {
 	from { background-position: 0 0; }
@@ -61,7 +62,6 @@
 				width: 0%;
 				background-color: #75F2CE;
 			}
-
 		}
 	}
 }
@@ -113,7 +113,8 @@ header{
 }
 
 #language-selector{
-	float:right;
+	position: absolute;
+	right: 20px;
 
 	a{
 		color: grey;
@@ -160,8 +161,10 @@ p{
 }
 
 .nav{
+		position: fixed;
+		width: 100vw;
     color: $third-color;
-    background-color:rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0.5);
     list-style: none;
 }
 
@@ -292,7 +295,11 @@ header{
     margin: 0 0 20px 0;
     font-size: 12px;
     font-size: 1.2rem;
-    padding: 10px 20px;
+    padding: 10px 0px;
+}
+
+.inner-nav{
+	padding: 0px 20px;
 }
 
 .nav__item{
@@ -559,61 +566,3 @@ footer{
 }
 
 }
-
-/*****************************************************************************************
-** Mobile CSS *START*
-*****************************************************************************************/
-@media (max-width: 590px){
-
-    .timeline{
-        margin: 0 0 0 0;
-    }
-
-    .timeline__line {
-        display: none;
-    }
-
-    .timepoint{
-        width: 100%;
-        margin: 10px 0 10px 0;
-    }
-
-    .timepoint__information{
-        width: 100%;
-    }
-
-    .timepoint__year{
-        margin: 8px 0 0 0;
-        font-size: 8vw;
-    }
-
-    .timepoint__headline{
-        font-size: 3.8vw;
-    }
-
-    .timepoint__divider{
-        display: none;
-    }
-
-    .contactbox{
-        border-right: none;
-        border-bottom: 1px solid #595959;
-    }
-
-    .contactbox__headline{
-        text-align: center;
-    }
-
-    .contactbox__item{
-        text-align: center;
-    }
-
-    .socialmedia{
-        padding: 0 0 20px 0;
-    }
-}
-
-
-/*****************************************************************************************
-** Mobile CSS *END*
-*****************************************************************************************/

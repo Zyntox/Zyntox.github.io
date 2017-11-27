@@ -7,6 +7,13 @@ function hideScreen(){
   loadingScreen.className += " hide-screen";
 }
 
+function toggleMenu(){
+  console.log("Setting menu class...");
+  var innerNav = document.getElementById('inner-nav');
+  innerNav.className = "show";
+}
+
+
 // function for checking if about-me images has loaded.
 if(document.getElementById("header--aboutMe")){
   img = document.getElementById("header--aboutMe");
