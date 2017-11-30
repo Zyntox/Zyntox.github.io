@@ -1,8 +1,17 @@
 
 <html>
     <head>
-        <title>Curriculum Vitae</title>
-        <link rel="stylesheet" href="{{ '/assets/main.css' | absolute_url }}">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110484295-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110484295-1');
+      </script>
+      <title>Curriculum Vitae</title>
+      <link rel="stylesheet" href="{{ '/assets/main.css' | absolute_url }}">
     </head>
     <body>
     {% include jumbotron.html pagetype=page.pagetype language=page.language %}
