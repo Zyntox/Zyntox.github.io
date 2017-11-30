@@ -105,12 +105,24 @@ header{
 
 #header--aboutMe{
     background-color: #151515;
-
+		box-sizing: border-box;
+		padding-top: 200px;
+		margin-top: 32px;
+		background-position: top;
     background-image: url('../assets/img/hp3.jpg');
     background-size:cover;
     background-repeat: none;
 
 }
+
+.flag_eng{
+	height: 15px;
+}
+
+.flag_swe{
+	height: 15px;
+}
+
 
 #language-selector{
 	position: absolute;
@@ -162,9 +174,10 @@ p{
 
 .nav{
 		position: fixed;
+		top: 0;
 		width: 100vw;
     color: $third-color;
-    background-color:rgba(0,0,0,0.5);
+    background-color: #000;
     list-style: none;
 }
 
@@ -184,12 +197,9 @@ p{
 
 
 .jumbotron{
-
-}
-
-.jumbotron--aboutMe{
-    position: relative;
-    top: 220;
+	.jumbotron--aboutMe{
+		padding-top: 150px;
+	}
 }
 
 .jumbotron__logo{
@@ -307,7 +317,8 @@ header{
 }
 
 .jumbotron{
-    padding: 20px 0 0 0 ;
+	padding: 20px 0 20px 0;
+	margin-top: 35px;
 }
 
 .jumbotron__headline{

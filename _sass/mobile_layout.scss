@@ -2,10 +2,17 @@
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
+.hide{
+  display: none;
+}
 
+.mainboard{
+  overflow-x: hidden;
+}
 
 .jumbotron{
   padding-top: 150px;
+
   .jumbotron__logo{
     margin: 0px 0 60px 0;
   }
@@ -25,6 +32,17 @@ and (max-device-width : 667px) {
     margin: 0px 0px 40px 0px;
     padding: 28px 0 17px 0;
   }
+}
+
+#header--aboutMe{
+  margin-top: 82px;
+}
+
+.jumbotron--aboutMe{
+  margin-top: 140px;
+  padding-top: 200;
+  position: static;
+
 
 }
 
@@ -87,11 +105,23 @@ footer{
         height: 6px;
         margin: 9px 0px;
       }
-
     }
 
-    #inner-nav{
-      display: none;
+    #language-selector{
+      display: inline-block;
+      left: 20px;
+      top: 30px;
+      right: auto;
+      font-size: 3rem;
+
+      .flag_eng{
+      	height: 50px;
+      }
+
+      .flag_swe{
+      	height: 50px;
+      }
+
     }
 
     .nav__item{
@@ -166,19 +196,43 @@ footer{
 
   }
 
+
+
+  /*********************************************************************
+  ** Cover letter CSS *End*
+  *********************************************************************/
+
+  /*********************************************************************
+  ** Curriculum Vitae CSS *START*
+  *********************************************************************/
+
+  .timeline__line {
+    display: none;
+  }
+
+  .timepoint__divider{
+      display: none;
+  }
+
+  .timepoint{
+      width: 100%;
+      margin: 10px 0 10px 0;
+  }
+
+  .timepoint__information{
+      width: 100%;
+  }
+
+  .timepoint__year{
+      margin: 8px 0 0 0;
+      font-size: 8vw;
+  }
+
+  .timepoint__headline{
+      font-size: 3.8vw;
+  }
+
 }
-
-
-/*********************************************************************
-** Cover letter CSS *End*
-*********************************************************************/
-
-/*********************************************************************
-** Curriculum Vitae CSS *START*
-*********************************************************************/
-
-
-
 
 
 

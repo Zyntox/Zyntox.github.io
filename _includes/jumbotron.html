@@ -9,23 +9,15 @@
         <div class="hamburger-line"></div>
         <div class="hamburger-line"></div>
       </div>
-      <br class="clear">
-      <div id="inner-nav">
-        <div id="language-selector">
-          {% if include.language == "swedish" %}
-            <a class="selected" href="{{ '/index.html' | absolute_url }}">SWE</a>
-          {% endif %}
-          {% if include.language == "english" %}
-            <a href="{{ '/index.html' | absolute_url }}">SWE</a>
-          {% endif %}
-          <span>/</span>
-          {% if include.language == "swedish" %}
-            <a href="{{'/index_eng.html' | absolute_url }}">ENG</a>
-          {% endif %}
-          {% if include.language == "english" %}
-            <a  class="selected" href="{{'/index_eng.html' | absolute_url }}">ENG</a>
-          {% endif %}
-        </div>
+      <div id="language-selector">
+        <a href="{{ '/index.html' | absolute_url }}">
+          <img class="flag_swe" src="http://localhost:4000/assets/img/se.svg" alt="">
+        </a>
+        <a href="{{ '/index_eng.html' | absolute_url }}">
+          <img class="flag_eng" src="http://localhost:4000/assets/img/gb.svg" alt="">
+        </a>
+      </div>
+      <div id="inner-nav" class="hide">
         {% if include.language == "swedish" %}
           <li class="nav__item"><a class="nav__link" href="{{ '/index.html' | absolute_url }}">PERSONLIGT BREV</a></li>
           <li class="nav__item"><a class="nav__link" href="{{ '/curriculum-vitae.html' | absolute_url }}">CURRICULUM VITAE</a></li>

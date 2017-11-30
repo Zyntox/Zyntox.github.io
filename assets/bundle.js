@@ -8,6 +8,31 @@ function hideScreen(){
   loadingScreen.className += " hide-screen";
 }
 
+function toggleMenu(){
+  console.log("Setting menu class...");
+  var innerNav = document.getElementById('inner-nav');
+  innerNav.className = "show";
+}
+
+function initEventListeners(){
+  var hamburger = document.getElementById('hamburger-menu');
+
+
+  hamburger.addEventListener('click', function(){
+    toggleMenu();
+  });
+}
+
+function toggleMenu(){
+  innerNav = document.getElementById('inner-nav');
+  if (innerNav.className == 'hide'){
+    innerNav.className = '';
+  } else {
+    innerNav.className = 'hide';
+  }
+
+}
+
 // function for checking if about-me images has loaded.
 if(document.getElementById("header--aboutMe")){
   img = document.getElementById("header--aboutMe");
@@ -167,6 +192,7 @@ window.onresize = function(event) {
 
 
 window.onload = function(){
+    initEventListeners();
     setTimelineHeight();
     setHeaderlogo();
     randomFact();
